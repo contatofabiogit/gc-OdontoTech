@@ -1,6 +1,7 @@
 .container {
     font-family: "Century Gothic";
     max-width: 100%;
+    box-shadow: -10px 10px 20px #A7A5A0;
 }
 
 .cabecalhoH {
@@ -21,10 +22,22 @@ div img {
     max-width: 100%;
 }
 
+.logoCanto{
+    
+}
+
 .material-icons {
     color: #FFFFFF;
 }
 
+.rodape {
+    background-color: #5D93CD;
+    color: #FFFFFF
+}
+
+.rodape a {
+    color: #FFFFFF;
+}
 
 /* centered columns styles */
 
