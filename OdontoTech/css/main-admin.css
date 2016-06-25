@@ -1,0 +1,57 @@
+.container {
+    font-family: "Century Gothic";
+    max-width: 100%;
+}
+
+.cabecalhoH {
+    font-size: 27px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+div img {
+    max-width: 100px;
+    padding-top: 10px;
+}
+
+.cabecalho {
+    background-color: #5D93CD;
+    margin-left: 0 auto;
+    padding: 0px 10px 0px 10px;
+    max-width: 100%;
+}
+
+.material-icons {
+    color: #FFFFFF;
+}
+
+
+/* centered columns styles */
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.col-fixed {
+    /* custom width */
+    width: 320px;
+}
+
+.col-min {
+    /* custom min width */
+    min-width: 320px;
+}
+
+.col-max {
+    /* custom max width */
+    max-width: 320px;
+}
