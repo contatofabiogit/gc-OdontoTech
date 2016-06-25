@@ -32,7 +32,8 @@ div img {
 
 .rodape {
     background-color: #5D93CD;
-    color: #FFFFFF
+    color: #FFFFFF;
+    margin-bottom: 8px;
 }
 
 .rodape a {
