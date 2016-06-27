@@ -31,48 +31,63 @@
 
 <body>
     <div class="container">
+        <br>
         <div class="cabecalho">
             <div class="cabecalhoH">Sistema Odontológico - Home</div>
-            <div class="text-right">
-                <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+            <div class="">
+
+                <!-- Left aligned menu below button -->
+                <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
                     <i class="material-icons">more_vert</i>
                 </button>
 
-                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-                    <li class="mdl-menu__item">Configurações</li>
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-left">
                     <li class="mdl-menu__item">Perfil</li>
-                    <a href="login.html"><li class="mdl-menu__item">Sair</li></a>
+                    <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Configurações</li>
+                    <li class="mdl-menu__item">Sair</li>
                 </ul>
-            </div>
-        </div>
 
-        <div class="row menus row-centered">
-            <div class="col-md-3 text-center col-centered">
-                <a href="#"><img src="images/cadastrar-render.png" alt="cadastrar"></a>
-            </div>
-
-            <div class="col-md-3 text-center col-centered">
-                <a href="#"><img src="images/buscar-render.png" alt="buscar"></a>
-            </div>
-
-            <div class="col-md-3 text-center col-centered">
-                <a href="#"><img src="images/receita-render.png" alt="receita financeira"></a>
-            </div>
-
-            <div class="col-md-3 text-center col-centered">
-                <a href="#"><img src="images/agendar-render.png" alt="relatorio"></a>
-            </div>
-
-            <div class="col-md-3 text-center col-centered">
-                <a href="#"><img src="images/relatorio-render.png" alt=""></a>
-            </div>
-
-            <div class="col-md-3 text-center col-centered">
-                <a href="#"><img src="images/procedimento-render.png" alt=""></a>
+                <!-- Expandable Textfield -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="sample6">
+                        <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
-        <div class="logoCanto text-right">
+        <div class="row menus row-centered">
+            <div class="col-md-3 text-center col-centered">
+                <a href="#"><img src="images/cadastrar-render.png" class="cadastrar" alt="cadastrar"></a>
+            </div>
+
+            <div class="col-md-3 text-center col-centered">
+                <a href="#"><img src="images/buscar-render.png" class="buscar" alt="buscar"></a>
+            </div>
+
+            <div class="col-md-3 text-center col-centered">
+                <a href="#"><img src="images/receita-render.png" class="receita" alt="receita financeira"></a>
+            </div>
+
+            <div class="col-md-3 text-center col-centered">
+                <a href="#"><img src="images/agendar-render.png" class="agendar" alt="relatorio"></a>
+            </div>
+
+            <div class="col-md-3 text-center col-centered">
+                <a href="#"><img src="images/relatorio-render.png" class="relatorio" alt="relatorio"></a>
+            </div>
+
+            <div class="col-md-3 text-center col-centered">
+                <a href="#"><img src="images/procedimento-render.png" class="procedimento" alt="procedimento"></a>
+            </div>
+        </div>
+        <br>
+        <div class="logoCanto">
+            <img src="images/logo-render.png" alt="logo">
         </div>
         <br>
         <div class="menu">

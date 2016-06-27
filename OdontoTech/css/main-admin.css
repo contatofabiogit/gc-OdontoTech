@@ -10,7 +10,7 @@
     padding-top: 10px;
 }
 
-div img {
+.cadastrar, .buscar, .receita, .agendar, .relatorio, .procedimento {
     max-width: 100px;
     padding-top: 10px;
 }
@@ -23,7 +23,7 @@ div img {
 }
 
 .logoCanto{
-    
+    text-align: right;
 }
 
 .material-icons {
@@ -34,6 +34,7 @@ div img {
     background-color: #5D93CD;
     color: #FFFFFF;
     margin-bottom: 8px;
+    padding: 5px;
 }
 
 .rodape a {
