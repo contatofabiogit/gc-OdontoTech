@@ -10,6 +10,9 @@
     padding-top: 10px;
 }
 
+.menuPesquisa{
+}
+
 .cadastrar {
     max-width: 100px;
     padding-top: 10px;
@@ -48,9 +51,12 @@
 
 .cabecalho {
     background-color: #5D93CD;
-    margin-left: 0 auto;
     padding: 0px 10px 0px 10px;
     max-width: 100%;
+}
+
+.cabecalho div{
+        margin-left: 10px;
 }
 
 .logoCanto {

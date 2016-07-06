@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Sistema Odontológico - OdontoTech</title>
@@ -36,9 +37,9 @@
                     <img src="images/logo-render.png" alt="logomarca">
                 </div>
                 <br>
-                
-                
-                <form  role="form-signin" method="POST" action="valida_login.php">
+
+
+                <form role="form-signin" method="POST" action="valida_login.php">
                     <div class="row entrada">
                         <div class="iconInput">
                             <i class="glyphicon glyphicon-user"></i>
@@ -56,10 +57,20 @@
                         <center>
                             <button type="submit" class="btn btn-primary btnAcessa">ACESSAR</button>
                         </center>
+
+                        <br>
+
+                        <p class="text-center mensagem">
+                            <?php
+                                if(isset($_SESSION['loginErro'])){
+                                    echo $_SESSION['loginErro'];
+                                    unset ($_SESSION['loginErro']);
+                                }
+                            ?>
+                        </p>
                     </div>
                 </form>
-                
-                
+
             </div>
         </div>
 
