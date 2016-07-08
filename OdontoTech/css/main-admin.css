@@ -4,24 +4,31 @@
     box-shadow: -10px 10px 20px #A7A5A0;
 }
 
-.cabecalhoH {
+header {
     font-size: 27px;
     color: #FFFFFF;
     padding-top: 10px;
+    background-color: #5D93CD;
+    padding-left: 20px;
+    margin-left: 10px;
 }
 
-.menuPesquisa{
+.topo {
+    background-color: #5D93CD;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.mdl-textfield__expandable-holder {
+    color: #FFFFFF;
 }
 
 .cadastrar {
     max-width: 100px;
-    padding-top: 10px;
 }
 
-.cadastrar:hover {
-    background-color: gray;
-    padding: 6px;
-    transition: 0.5s ease-in;
+.cadastrar:hover{
+    max-width: 100px;
 }
 
 .buscar {
@@ -49,14 +56,8 @@
     padding-top: 10px;
 }
 
-.cabecalho {
-    background-color: #5D93CD;
-    padding: 0px 10px 0px 10px;
-    max-width: 100%;
-}
-
-.cabecalho div{
-        margin-left: 10px;
+.cabecalho div {
+    margin-left: 10px;
 }
 
 .logoCanto {
