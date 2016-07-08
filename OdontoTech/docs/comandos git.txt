@@ -1,4 +1,7 @@
 Comandos básicos do git:
+git config --global user.name "Coloque seu nome"
+git config --global user.email "Coloque seu e-mail"
+
 git init
 
 Adicionar arquivos no índice (pode verificar com 'git status')
