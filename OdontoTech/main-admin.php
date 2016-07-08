@@ -59,22 +59,23 @@
             <br>
             <div class="row menus row-centered">
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/cadastrar-render.png" class="cadastrar" alt="cadastrar"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal cadastrar">
+                    <img src="images/cadastrar-render.png" class="cadastrar" alt="cadastrar" onmouseover="this.src='images/cadastrar-render-onmouse.png'" onmouseout="this.src='images/cadastrar-render.png'"></a>
                 </div>
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#"><img src="images/buscar-render.png" class="buscar" alt="buscar"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/buscar-render.png" class="buscar" alt="buscar" onmouseover="this.src='images/buscar-render-onmouse.png'" onmouseout="this.src='images/buscar-render.png'"></a>
                 </div>
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#"><img src="images/receita-render.png" class="receita" alt="receita financeira"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/receita-render.png" class="receita" alt="receita financeira" onmouseover="this.src='images/receita-render-onmouse.png'" onmouseout="this.src='images/receita-render.png'"></a>
                 </div>
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#"><img src="images/agendar-render.png" class="agendar" alt="relatorio"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/agendar-render.png" class="agendar" alt="relatorio" onmouseover="this.src='images/agendar-render-onmouse.png'" onmouseout="this.src='images/agendar-render.png'"></a>
                 </div>
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#"><img src="images/relatorio-render.png" class="relatorio" alt="relatorio"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/relatorio-render.png" class="relatorio" alt="relatorio" onmouseover="this.src='images/relatorio-render-onmouse.png'" onmouseout="this.src='images/relatorio-render.png'"></a>
                 </div>
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#"><img src="images/procedimento-render.png" class="procedimento" alt="procedimento"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/procedimento-render.png" class="procedimento" alt="procedimento" onmouseover="this.src='images/receita-render-onmouse.png'" onmouseout="this.src='images/receita-render.png'"></a>
                 </div>
             </div>
             <br>
