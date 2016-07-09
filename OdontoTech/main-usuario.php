@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once("seguranca.php");
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -57,7 +58,7 @@
                     <a href="#" class="hvr-shutter-out-horizontal"><img src="images/anamnese-render.png" class="agendar" alt="relatorio" onmouseover="this.src='images/anamnese-render-onmouse.png'" onmouseout="this.src='images/anamnese-render.png'"></a>
                 </div>
                 <div class="col-md-6 text-center col-centered">
-                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/buscar-render.png" class="buscar" alt="buscar" onmouseover="this.src='images/buscar-render-onmouse.png'" onmouseout="this.src='images/buscar-render.png'"></a>
+                    <a href="#" class="hvr-shutter-out-horizontal"><img src="images/procedimento-usu-render.png" class="buscar" alt="buscar" onmouseover="this.src='images/procedimento-usu-render-onmouse.png'" onmouseout="this.src='images/procedimento-usu-render.png'"></a>
                 </div>
             </div>
             <br>

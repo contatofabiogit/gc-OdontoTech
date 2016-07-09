@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once("seguranca.php");
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -46,7 +47,7 @@
                         <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6"> <i class="material-icons">search</i> </label>
                         <div class="mdl-textfield__expandable-holder">
                             <input class="mdl-textfield__input" type="text" id="sample6">
-                            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            <a href="sair.php"><label class="mdl-textfield__label" for="sample-expandable">Sair</label></a>
                         </div>
                     </div>
                 </div>

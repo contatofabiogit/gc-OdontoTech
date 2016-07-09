@@ -8,81 +8,69 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Sistema Odontológico - OdontoTech</title>
-
         <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="css/ie10-viewport-bug-workaround.css">
         <link rel="stylesheet" href="css/signin.css">
-
-
         <!-- Location-->
         <link rel="stylesheet" href="css/estiloLogin.css">
-
         <!-- MDL Google -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
-
-    </head>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css"> </head>
 
     <body>
-        <div class="container">
-            <div class="row formulario">
-                <div class="row cabecalho">
-                    <strong>OdontoTech</strong>
-                </div>
-                <div class="row logoLogin">
-                    <img src="images/logo-render.png" alt="logomarca">
-                </div>
-                <br>
-
-
-                <form role="form-signin" method="POST" action="valida_login.php">
-                    <div class="row entrada">
-                        <div class="iconInput">
-                            <i class="glyphicon glyphicon-user"></i>
-                            <input type="text" name="usuario" class="form-control" placeholder="Login" required autofocus/>
-                        </div>
-                        <br>
-                        <div class="iconInput">
-                            <i class="glyphicon glyphicon-lock"></i>
-                            <input type="password" name="senha" class="form-control" placeholder="Senha" required/>
-                        </div>
-                        <br>
-                        <center><a href="#">Esqueceu sua senha?</a></center>
-                        <br>
-                        <br>
-                        <center>
-                            <button type="submit" class="btn btn-primary btnAcessa">ACESSAR</button>
-                        </center>
-
-                        <br>
-
-                        <p class="text-center mensagem">
-                            <?php
+        <?php
+        unset (
+                $_SESSION['usuarioId'],
+            $_SESSION['usuarioNome'], 
+            $_SESSION['usuarioSexo'], 
+            $_SESSION['usuarioLogin'], 
+            $_SESSION['usuarioSenha'], 
+            $_SESSION['usuarioTelefone'], 
+            $_SESSION['usuarioCpf'], 
+            $_SESSION['usuarioEmail'], 
+            $_SESSION['usuarioDicaSenha'], 
+            $_SESSION['usuarioEndereco'], 
+            $_SESSION['usuarioNivelAcesso']);
+        ?>
+            <div class="container">
+                <div class="row formulario">
+                    <div class="row cabecalho"> <strong>OdontoTech</strong> </div>
+                    <div class="row logoLogin"> <img src="images/logo-render.png" alt="logomarca"> </div>
+                    <br>
+                    <form role="form-signin" method="POST" action="valida_login.php">
+                        <div class="row entrada">
+                            <div class="iconInput"> <i class="glyphicon glyphicon-user"></i>
+                                <input type="text" name="usuario" class="form-control" placeholder="Login" required autofocus/> </div>
+                            <br>
+                            <div class="iconInput"> <i class="glyphicon glyphicon-lock"></i>
+                                <input type="password" name="senha" class="form-control" placeholder="Senha" required/> </div>
+                            <br>
+                            <center><a href="#">Esqueceu sua senha?</a></center>
+                            <br>
+                            <br>
+                            <center>
+                                <button type="submit" class="btn btn-primary btnAcessa">ACESSAR</button>
+                            </center>
+                            <br>
+                            <p class="text-center mensagem">
+                                <?php
                                 if(isset($_SESSION['loginErro'])){
                                     echo $_SESSION['loginErro'];
                                     unset ($_SESSION['loginErro']);
                                 }
                             ?>
-                        </p>
-                    </div>
-                </form>
-
+                            </p>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-
-
-
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-        <!-- MDL Google -->
-        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <!-- MDL Google -->
+            <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     </body>

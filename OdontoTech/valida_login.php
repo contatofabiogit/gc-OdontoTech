@@ -10,7 +10,7 @@
 
     if(empty($resultado)){
         //Mensagem de erro
-        $_SESSION['loginErro'] = "Usuário ou Senha Inválido";
+        $_SESSION['loginErro'] = "Usuário e/ou Senha Inválido(s)";
         
         //Manda o usuário para a tela de login
         header("Location: login.php");
@@ -19,9 +19,15 @@
         //Define os valores atribuídos na sessão do usuário
         $_SESSION['usuarioId'] = $resultado['id'];
         $_SESSION['usuarioNome'] = $resultado['nome'];
-        $_SESSION['usuarioNivelAcesso'] = $resultado['nivel_acesso_id'];
+        $_SESSION['usuarioSexo'] = $resultado['sexo'];
         $_SESSION['usuarioLogin'] = $resultado['login'];
         $_SESSION['usuarioSenha'] = $resultado['senha'];
+        $_SESSION['usuarioTelefone'] = $resultado['telefone'];
+        $_SESSION['usuarioCpf'] = $resultado['cpf'];
+        $_SESSION['usuarioEmail'] = $resultado['email'];
+        $_SESSION['usuarioDicaSenha'] = $resultado['dicaSenha'];
+        $_SESSION['usuarioEndereco'] = $resultado['endereco'];
+        $_SESSION['usuarioNivelAcesso'] = $resultado['nivel_acesso_id'];
         
         if($_SESSION['usuarioNivelAcesso'] == 1){
             //Manda o usuário para a tela de login
