@@ -6,6 +6,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="images/logo-logomarca-render.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>OdontoTech - Home</title>
         <!-- Location-->
@@ -53,7 +54,7 @@
             <br>
             <div class="row menus row-centered">
                 <div class="col-md-3 text-center col-centered">
-                    <a href="#m" class="hvr-shutter-out-horizontal cadastrar" data-toggle="modal" data-target="#myModal"> <img src="images/cadastrar-render.png" class="cadastrar" alt="cadastrar" onmouseover="this.src='images/cadastrar-render-onmouse.png'" onmouseout="this.src='images/cadastrar-render.png'"> </a>
+                    <a href="#" class="hvr-shutter-out-horizontal cadastrar" data-toggle="modal" data-target="#myModal"> <img src="images/cadastrar-render.png" class="cadastrar" alt="cadastrar" onmouseover="this.src='images/cadastrar-render-onmouse.png'" onmouseout="this.src='images/cadastrar-render.png'"> </a>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div class="modal-dialog" role="document">
@@ -65,7 +66,7 @@
                                     <div class="modal-container">
                                         <div class="row row-centered">
                                             <div class="col-md-4 col-centered text-center dentista">
-                                                <a href="#m" class="hvr-shutter-out-horizontal cadastrar"> <img src="images/cadastrar-dentista-render.png" class="cadastrar" alt="cadastrar" onmouseover="this.src='images/cadastrar-dentista-render-onmouse.png'" onmouseout="this.src='images/cadastrar-dentista-render.png'"> </a>
+                                                <a href="cadastrar-dentista.php" class="hvr-shutter-out-horizontal cadastrar"> <img src="images/cadastrar-dentista-render.png" class="cadastrar" alt="cadastrar" onmouseover="this.src='images/cadastrar-dentista-render-onmouse.png'" onmouseout="this.src='images/cadastrar-dentista-render.png'"> </a>
                                             </div>
                                             <div class="col-md-4 col-centered text-center paciente">
                                                 <a href="#m" class="hvr-shutter-out-horizontal cadastrar"> <img src="images/cadastrar-paciente-render.png" class="cadastrar" alt="cadastrar" onmouseover="this.src='images/cadastrar-paciente-render-onmouse.png'" onmouseout="this.src='images/cadastrar-paciente-render.png'"> </a>
