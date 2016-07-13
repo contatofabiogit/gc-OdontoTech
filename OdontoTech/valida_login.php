@@ -35,11 +35,9 @@
         }else if ($_SESSION['usuarioNivelAcesso'] == 2){
             //Manda o usuário para a tela de usuario
             header("Location: main-usuario.php");
-        } else if ($_SESSION['usuarioNivelAcesso'] == 3){
+        } else{
             //Manda o usuário para a tela de usuario
             header("Location: main-assistente.php");
-        }else{
-            $_SESSION['loginErro'];
         }
         
     }

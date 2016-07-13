@@ -31,15 +31,26 @@
         <div class="container">
             <br>
             <div class="row cabecalhoP">
-                <header>Sistema Odontológico - Cadastrar Dentista</header>
-                
+                <header>Sistema Odontológico - Buscar Dentista</header>
+            </div>
             <br>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <!-- tr são linhas e td são colunas -->
+                    <tr>
+                        <td class="active">...</td>
+                        <td class="success">...</td>
+                        <td class="warning">...</td>
+                        <td class="danger">...</td>
+                        <td class="info">...</td>
+                    </tr>
+                </table>
+            </div>
             <div class="logoCanto row-centered"> <img src="images/logo-render.png" alt="logo"> </div>
             <br>
             <div class="menu"> </div>
             <br>
             <div class="rodape text-center"> © Copyright 2016-2020 <a href="#">OdontoTech</a> - Versão 1.0.0.0 </div>
-        </div>
         </div>
     </body>
 
