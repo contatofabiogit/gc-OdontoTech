@@ -1,6 +1,7 @@
 <?php
     session_start();
-?>
+    include_once("seguranca.php");
+?> ?>
     <!DOCTYPE html>
     <html lang="pt-br">
 
@@ -31,15 +32,31 @@
         <div class="container">
             <br>
             <div class="row cabecalhoP">
-                <header>Sistema Odontológico - Cadastrar Dentista</header>
-                
+                <header>Sistema Odontológico - Buscar Dentista</header>
+            </div>
             <br>
-            <div class="logoCanto row-centered"> <img src="images/logo-render.png" alt="logo"> </div>
+            <!-- Início linha nome e sobrenome -->
+            <div>
+                <form class="form-horizontal">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Nome</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" name="nome" placeholder="Nome"> </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Sobronome</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword3" name="sobrnome" placeholder="Sobrenome"> </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <!-- Fim linha nome e sobrenome -->
+            <div class="logoCanto text-center"> <img src="images/logo-render.png" alt="logo"> </div>
             <br>
             <div class="menu"> </div>
             <br>
             <div class="rodape text-center"> © Copyright 2016-2020 <a href="#">OdontoTech</a> - Versão 1.0.0.0 </div>
-        </div>
         </div>
     </body>
 

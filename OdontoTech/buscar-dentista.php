@@ -1,5 +1,8 @@
 <?php
     session_start();
+    include_once("seguranca.php");
+    include_once("conexao.php");
+?>
 ?>
     <!DOCTYPE html>
     <html lang="pt-br">
@@ -28,6 +31,10 @@
     </head>
 
     <body>
+       <?php
+        $resultado = mysql_query("SELECT * FROM usuarios WHERE nivel_acesso_id = '0'");
+        $linhas = mysql_num_rows($resultado);
+        ?>
         <div class="container">
             <br>
             <div class="row cabecalhoP">
@@ -36,14 +43,23 @@
             <br>
             <div class="table-responsive">
                 <table class="table table-striped table-hover">
-                    <!-- tr são linhas e td são colunas -->
-                    <tr>
-                        <td class="active">...</td>
-                        <td class="success">...</td>
-                        <td class="warning">...</td>
-                        <td class="danger">...</td>
-                        <td class="info">...</td>
-                    </tr>
+                    <td>Id</td>
+                    <td>Nome</td>
+                    <td>E-mail</td>
+                    <td>Opções</td>
+                    <tbody>
+                        <?php
+                        while($linhas = mysql_fetch_array($resultado)){
+                           echo "<tr>";
+                            echo "<td>".$linhas['id']."</td>";
+                            echo "<td>".$linhas['nome']."</td>";
+                            echo "<td>".$linhas['email']."</td>";
+                            echo "<td> Editar - Apagar - Visualizar</td>";
+                            echo "</tr>";
+
+                        }
+                        ?>
+                    </tbody>
                 </table>
             </div>
             <div class="logoCanto row-centered"> <img src="images/logo-render.png" alt="logo"> </div>
