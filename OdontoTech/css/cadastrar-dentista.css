@@ -1,0 +1,18 @@
+.home,
+.salvar,
+.cancelar,
+.limpar {
+    max-width: 50px;
+    padding-top: 10px;
+}
+
+.home a,
+.salvar a,
+.cancelar a,
+.limpar a{
+    color: #000000;
+}
+
+.salvarPrincipal{
+    margin-left: 5px;
+}

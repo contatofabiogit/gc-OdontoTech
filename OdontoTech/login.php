@@ -68,7 +68,7 @@
                                                        </span>
                                                         <div class="text-left">
                                                             <li>Endereço de e-mail para recuperação de conta;</li>
-                                                            <li>Ou sseu e-mail.</li>
+                                                            <li>Ou seu e-mail.</li>
                                                         </div>
                                                     </div>
                                                 </div>

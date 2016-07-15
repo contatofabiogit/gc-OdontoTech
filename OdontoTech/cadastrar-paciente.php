@@ -14,7 +14,6 @@
         <!-- Location-->
         <link rel="stylesheet" href="css/main-admin.css">
         <link rel="stylesheet" href="css/main-hover.css">
-        <link rel="stylesheet" href="css/cadastrar-dentista.css">
         <!-- MDL Google -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
@@ -33,14 +32,11 @@
         <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
-                jQuery(function($) {
-                    $("#cep").mask("99.999-99");
-                    $("#cro").mask("99999");
-                    $("#dtnascimento").mask("99/99/9999", {
-                        placeholder: "dd/mm/aaaa"
-                    });
-                    $("#cpf").mask("999.999.999-99");
-                    $("#telefone").mask("(99) 9.9999-9999");
+                jQuery(function($){
+                   $("#cep").mask("99.999-99");
+                   $("#cro").mask("99999");
+                   $("#dtnascimento").mask("99/99/9999", {placeholder:"dd/mm/aaaa"});
+                   $("#cpf").mask("999.999.999-99");
 
                 });
             });
@@ -92,53 +88,55 @@
                         <br>
                         <input type="text" class="form-control" id="inputEmail3" placeholder="Especialização" /> </div>
 
-                    <div class="form-group text-left col-md-4">
-                        <label name="text">Sexo</label>
+                    <div class="form-group text-left col-md-7">
+                        <label name="text">Endereço</label>
                         <br>
-                        <select class="form-control" id="">
-                            <option>Selecione</option>
-                            <option>M</option>
-                            <option>F</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group text-left col-md-4">
-                        <label name="login">Login</label>
-                        <br>
-                        <input type="text" class="form-control" name="login" id="login" placeholder="Login" /> </div>
-
-                    <div class="form-group text-left col-md-4">
-                        <label name="senha">Senha</label>
-                        <br>
-                        <input type="text" class="form-control" name="senha" id="senha" placeholder="Senha" /> </div>
-
-                    <div class="form-group text-left col-md-4">
-                        <label name="telefone">Telefone</label>
-                        <br>
-                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" /> </div>
-
-                    <div class="form-group text-left col-md-2">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Endereço" /> </div>
+                        
+                    <div class="form-group text-left col-md-5">
                         <label name="cpf">CPF</label>
                         <br>
                         <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF" /> </div>
 
-                    <div class="form-group text-left col-md-6">
-                        <label name="endereco">E-mail</label>
+                    <div class="form-group text-left col-md-3">
+                        <label name="endereco">Bairro</label>
                         <br>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" /> </div>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Bairro" /> </div>
+
+                    <div class="form-group text-left col-md-2">
+                        <label name="numero">Número</label>
+                        <br>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Número" /> </div>
+
+                    <div class="form-group text-left col-md-4">
+                        <label name="cidade">Cidade</label>
+                        <br>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Cidade" /> </div>
 
                     <div class="form-group text-left col-md-3">
-                        <label name="dicasenha">Dica de Senha</label>
+                        <label name="cep">CEP</label>
                         <br>
-                        <input type="text" class="form-control" id="dicasenha" name="dicasenha" placeholder="Dica de Senha" /> </div>
+                        <input type="text" max="16" class="form-control" name="cep" id="cep" placeholder="CEP" /> </div>
 
-                    <div class="form-group text-left col-md-6">
-                        <label name="endereco">Endereço</label>
+                   <div class="form-group text-left col-md-3">
+                        <label name="dtnascimento">Data de Nascimento</label>
                         <br>
-                        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço" /> </div>
+                        <input type="text" class="form-control" name="dtnascimento" id="dtnascimento" placeholder="Data de Nascimento" /> </div>
+                        
+                    <div class="form-group text-left col-md-2">
+                        <label name="complemento">Complemento</label>
+                        <br>
+                        <select class="form-control" id="">
+                            <option>Selecione</option>
+                            <option>Rua</option>
+                            <option>Quadra</option>
+                            <option>Apartamento</option>
+                            <option>Loteamento</option>
+                        </select>
+                    </div>
 
-                    <div class="form-group text-left col-md-3">
-                        <label name="nivelacesso">Nível de Acesso</label>
+                    <div class="form-group text-left col-md-2">
+                        <label name="uf">UF</label>
                         <br>
                         <?php
                             // arquivo que contera a conexao com o banco	
@@ -146,40 +144,16 @@
                 
                             echo "<select class='form-control' data-size='5' id='estado' name='estado'>";
                    
-                            $query = "SELECT * FROM nivel_acesso ORDER BY id";
+                            $query = "SELECT sigla, descricao FROM estados ORDER BY descricao";
                             $result = mysql_query($query);
                             while ($rows = mysql_fetch_array($result)){                       
-                               echo "<option value='$rows[id]'";
-                               echo ">$rows[id]- $rows[nome]";
+                               echo "<option value='$rows[sigla]'";
+                               echo ">$rows[descricao]";
                             }
                             echo "</select>";
                         ?>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="homePrincipal col-md-4 text-center ">
-                        <a href="#" class="hvr-grow-shadow"><img src="images/botao-home-render.png" class="home">
-                        <br>
-                        <label name="home">Home</label>
-                        </a>
-                    </div>
-                    <div class="salvarPrincipal col-md-4 text-center">
-                        <a href="#" class="hvr-float-shadow"><img src="images/botao-salvar-render.png" class="salvar">
-                        <br>
-                        <label name="salvar">Salvar</label>
-                        </a>
-                        <a href="#" class="hvr-float-shadow"><img src="images/botao-cancelar-render.png" class="cancelar">
-                        <br>
-                        <label name="cancelar">Cancelar</label>
-                        </a>
-                        <a href="#" class="hvr-float-shadow"><img src="images/botao-limpar-render.png" class="limpar">
-                        <br>
-                        <label name="limpar" >Limpar</label>
-                        </a>
-                    </div>
-                </div>
-                
             </form>
             <br>
             <div class="row logoCanto row-centered"> <img src="images/logo-render.png" alt="logo"> </div>
