@@ -3,7 +3,6 @@
     include_once("seguranca.php");
     include_once("conexao.php");
 ?>
-?>
     <!DOCTYPE html>
     <html lang="pt-br">
 
@@ -11,6 +10,7 @@
         <meta charset="UTF-8">
         <link rel="icon" type="image/png" href="images/logo-logomarca-render.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8">
         <title>OdontoTech - Home</title>
         <!-- Location-->
         <link rel="stylesheet" href="css/main-admin.css">
@@ -32,7 +32,7 @@
 
     <body>
        <?php
-        $resultado = mysql_query("SELECT * FROM usuarios WHERE nivel_acesso_id = '0'");
+        $resultado = mysql_query("SELECT * FROM usuarios WHERE nivel_acesso_id = '1'");
         $linhas = mysql_num_rows($resultado);
         ?>
         <div class="container">

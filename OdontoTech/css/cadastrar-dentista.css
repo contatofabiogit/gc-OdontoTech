@@ -13,6 +13,12 @@
     color: #000000;
 }
 
-.salvarPrincipal{
-    margin-left: 5px;
+.btn{
+    background: #FFFFFF;
+    border: solid 0px #FFFFFF;
+}
+
+button .opcao a{
+    color: #FFFFFF;
+    
 }
