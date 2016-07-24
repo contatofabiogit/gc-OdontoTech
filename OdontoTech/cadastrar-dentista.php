@@ -181,13 +181,10 @@
                                         <div class="modal-body">
                                             <div class="modal-container">
                                                 <div class="row row-centered">
-                                                    <div class="alert alert-info" role="alert"><strong>Deseja mesmo sair sem salvar os dados?</strong></div>
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Sim</button>
+                                                    <div class="alert alert-info" role="alert"><strong>Deseja mesmo sair desta página?</strong></div>
+                                                    <a href="main-admin.php" class="btn btn-default">Sim</a>
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
                                                 </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -198,8 +195,8 @@
                         </div>
                         
                         <div class="btn col-md-2">
-                            <button type="submit" class="btn">
-                                <a href="#" class="hvr-float-shadow"><img src="images/botao-limpar-render.png" class="limpar">
+                            <button type="reset" class="btn">
+                                <a class="hvr-float-shadow"><img src="images/botao-limpar-render.png" class="limpar">
                                     <br>
                                     <label name="limpar">Limpar</label>
                                 </a>

@@ -1,6 +1,5 @@
 <?php
-    
-function validaCPF($cpf){
+   function validaCPF($cpf){
     $cpf = preg_replace('/[^0-9]/', '', $cpf);
     
     $digitoA = 0;
@@ -32,5 +31,4 @@ function validaCPF($cpf){
         return 'true';
     }
     }
-
 ?>

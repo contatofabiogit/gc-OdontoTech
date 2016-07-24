@@ -17,8 +17,6 @@
     
     $query1 = mysql_query("INSERT INTO usuarios (nome, sexo, login, senha, telefone, cpf, email, dicaSenha, endereco, nivel_acesso_id VALUES ('$nome', '$sexo', '$login', '$senha', '$telefone', '$cpf', '$email', '$dicasenha', '$endereco', '$nivelacesso')");
     
-    $id = mysql_insert_id();
-    
     $query2 = mysql_query("INSERT INTO dentista (cro, especializacao) VALUES ('$cro', '$especializacao')");
 
     if(mysql_affected_rows() != 0){
